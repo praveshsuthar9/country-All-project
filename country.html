@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Where in the World?</h1>
+        <div class="light-m">
+          <button class="light-mode"><i class="fa-solid fa-sun"></i>Light Mode</button>
+        </div>
+      </header>
+      <main>
+        <section>
+          <div class="back-btn">
+            <button onclick="history.back()">
+              <i class="fa-solid fa-arrow-left"></i>Back
+            </button>
+          </div>
+          <div class="country-detail-container">
+            <div class="flag-img-c">
+              <img id="flag-img" src="" alt="flag" />
+            </div>
+            <div class="country-detail-content">
+              <h3 id="nameC">India</h3>
+              <div class="country-d-content-in">
+                <div class="left-content">
+                  <p><b>Population: </b><span id="population"></span></p>
+                  <p><b>Region: </b><span id="region"></span></p>
+                  <p><b>Capital: </b><span id="capital"></span></p>
+                </div>
+                <div class="right-content">
+                  <p><b>Top Level Domain: </b><span id="d"></span></p>
+                  <p><b>Currencies: </b><span id="c"></span></p>
+                  <p><b>Languages: </b><span id="languages"></span></p>
+                </div>
+              </div>
+              <div class="border-container">
+                <div class="border-content"><p>Border Country:</p></div>
+                <div class="border-link"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+   <script src="script.js"></script>
+    <script src="country.js"></script>
+ 
+
+  </body>
+</html>
